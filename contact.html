@@ -72,56 +72,16 @@
     </div>
   </nav>
 
+  <main class=contact-main>
 
-  <main>
 
-    <div class=index>
-      <h1 class=index-header><span style="font-size: 0.6em; color: white;">WELCOME<span style="font-family: sans-serif">,</span> WE ARE</span><br /><span style="font-size: 1.17em">STALLION</span><br /><span style="  color: #FFDD00;">CREATIONS</span></h1>
-    </div>
-
-    <div class="index-second">
-      <div class=index-child>
-        <div class="index-left">
-          <h2 style="font-family: paloseco">Broken headphones? Stallion has got you covered. Need audio equipment installed in your sweet new ride? Stallion has got you covered. Smashed the glass on your brand-new phone? Stallion has got you covered. Our areas of expertise are limitless, so chances are we can accommodate you.</h2><br />
-
-        </div>
-        <div class="index-right">
-          <div id=stage>
-            <img src="images/iphone.png" />
-            <img src="images/car.png" />
-            <img src="images/wii.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="index-third">
-
-    
+    <div class=contact-div>
+      <h1>Contact Me</h1>
+      <form action="https://formspree.io/your@email.com" method="POST">
+        <input type="text" name="name" placeholder="NAME"><br />
+        <input type="email" name="_replyto" placeholder="EMAIL"><br />
+        <textarea name="_replyto" placeholder="MESSAGE"></textarea><br />
+        <input type="submit" value="Send">
+      </form>
     </div>
   </main>
-
-
-
-
-
-  <script type="text/javascript">
-    // Original JavaScript code by Chirp Internet: www.chirp.com.au
-    // Please acknowledge use of this code by including this header.
-
-    window.addEventListener("DOMContentLoaded", function(e) {
-
-      var stage = document.getElementById("stage");
-      var fadeComplete = function(e) {
-        stage.appendChild(arr[0]);
-      };
-      var arr = stage.getElementsByTagName("img");
-      for (var i = 0; i < arr.length; i++) {
-        arr[i].addEventListener("animationend", fadeComplete, false);
-      }
-
-    }, false);
-  </script>
-
-
-</body>

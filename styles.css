@@ -178,37 +178,58 @@ nav {
 }
 
 .index-second {
-  height: 500px;
+  height: 30vw;
   background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(148,0,0,1) 100%);
   position: absolute;
   width: calc(100% - 80px);
 }
 
 .index-child {
-  width: 80%;
-  background: white;
+  width: 100%;
+  background: 000;
   margin: auto;
   margin-top: -100px;
-  box-shadow: 0 1px 10px 0px #222;
+  justify-content: center;
   display: flex;
 }
 .index-left {
-  width: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 0 5%;
+  box-shadow: 0 1px 10px 0px #222;
+  border-radius: 20px;
+}
+.index-left h2 {
+  text-align: center;
+  padding: 4vw;
+  font-size: 2vw;
+  line-height: 1.3em;
 }
 .index-right {
-  width: 50%;
+  width: 40%;
+  background: white;
+  margin: 0 5%;
+  box-shadow: 0 1px 10px 0px #222;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
 }
 
 .index-right img {
   width: 80%;
-  margin: 50px 0;k
+  margin: 50px 0;
 }
 
 
 #stage {
   height: 30vw;
   width: 100%;
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #stage img {
@@ -239,4 +260,32 @@ nav {
 @keyframes fader {
   from { opacity: 1.0; }
   to   { opacity: 0.0; }
+}
+
+
+
+.contact-main {
+  height: 100%;
+  background: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+input, textarea {
+  width: 250px;
+  height: 30px;
+  background: #121212;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-family: "product-sans"
+}
+
+textarea {
+  height: 60px;
 }
