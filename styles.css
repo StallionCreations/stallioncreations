@@ -154,7 +154,7 @@ nav {
   margin: 0px 0px;
   transition: 0.1s;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding: 5px;
   text-align: center;
   justify-content: center;
@@ -396,7 +396,7 @@ background: linear-gradient(to bottom, rgba(204,27,0,1) 0%, rgba(158,0,0,1) 100%
 .index-right p {
   width: 50%;
   line-height: 1.4em;
-  padding: 1vw;
+  padding: 0.5vw;
 }
 
 .index-right p a:hover {
@@ -560,6 +560,27 @@ input, textarea {
 
 textarea {
   height: 60px;
+}
+
+
+.content-main {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #212121;
+  justify-content: center;
+  font-size: 3vw;
+  color: white;
+}
+.video {
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
+
+iframe {
+  width: 71.111vw;
+  height: 40vw;
 }
 
 footer  {
