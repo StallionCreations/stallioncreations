@@ -12,6 +12,10 @@
   font-family: paloseco;
   src: url(fonts/paloseco.ttf);
 }
+@font-face {
+  font-family: chapaza;
+  src: url(fonts/Chapaza.ttf);
+}
 
 html, body, .form, .m-scene, .scene-element, .scene-element--slideUp {
   height: 100%
@@ -376,7 +380,7 @@ background: linear-gradient(to bottom, rgba(204,27,0,1) 0%, rgba(158,0,0,1) 100%
   margin: 0 5%;
   color: black;
   font-size: 2em;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   background: white;
   border-radius: 20px;
   padding: 2vw;
@@ -420,6 +424,94 @@ background: linear-gradient(to bottom, rgba(204,27,0,1) 0%, rgba(158,0,0,1) 100%
   }
 }
 
+@keyframes name {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes email {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  72% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes submit {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.name {
+  animation: name 1s ease;
+}
+.email {
+  animation: email 1s ease;
+}
+.message {
+  animation: message 1s ease;
+}
+.submit {
+  animation: submit 1s ease;
+}
+
 .contact-main {
   height: 100%;
   background: #212121;
@@ -428,6 +520,28 @@ background: linear-gradient(to bottom, rgba(204,27,0,1) 0%, rgba(158,0,0,1) 100%
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  z-index: -9999
+}
+
+.contact-right {
+  width: 50%;
+  color: white;
+}
+.contact-left {
+  width: 50%;
+  height: 100%;
+}
+
+.map {
+  animation: 1.8s ease-in-out 0s map
+}
+#map {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  float: left;
+  left: 0px;
 }
 
 input, textarea {
@@ -439,17 +553,40 @@ input, textarea {
   margin: 5px;
   padding: 5px;
   text-align: center;
-  font-family: "product-sans"
+  font-family: "product-sans";
+  animation: slideUp 1s ease;
+  color: white;
 }
 
 textarea {
   height: 60px;
 }
 
+footer  {
+  z-index: 9999;
+}
 .footer {
   height: 10vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-size: 1.3vw;
+  background: #121212;
+  color: white;
+}
+.footer-left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+  height: 10vw;
+}
+.footer-right {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 9vw;
+  margin-top: 5px;
 }
