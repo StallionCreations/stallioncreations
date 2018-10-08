@@ -839,7 +839,7 @@
     justify-content: center;
     z-index: 100;
     box-shadow: 0px 0px 20px black;
-    font-size: 1em;
+    font-size: 0.8em;
     padding-bottom: 20px;
   }
   .caret {
@@ -847,7 +847,7 @@
     color: white;
     animation: bounce 1s infinite alternate;
     width: 100%;
-    margin-top: -140px;
+    margin-top: -110px;
     text-align: center;
     cursor: default;
     text-shadow: 0px 5px 10px black;
@@ -865,7 +865,7 @@
     background: linear-gradient(to bottom, rgba(204, 27, 0, 1) 0%, rgba(158, 0, 0, 1) 100%);
     padding: 2%;
     z-index: -1;
-    font-size: 2.2em;
+    font-size: 2em;
     color: white;
   }
   .index-third h1 {
@@ -883,11 +883,13 @@
   .index-left {
     width: 100%;
     color: black;
-    font-size: 0.8em;
+    font-size: 0.5em;
     font-family: "paloseco";
     background: white;
     border-radius: 20px;
     padding: 5vw;
+    margin: 5% 4%;
+
 
     box-shadow: 0px 10px 20px #540000;
   }
@@ -898,19 +900,21 @@
     width: 100%;
     margin: 5% 5%;
     color: black;
-    font-size: 0.8em;
+    font-size: 0.5em;
     background: white;
     border-radius: 20px;
-    padding: 2vw;
+    padding: 4vw;
     display: flex;
     box-shadow: 0px 10px 20px #540000;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .index-right img {
-    max-height: 60vw;
+    max-height: 50vw;
     text-align: center;
+    justify-content: center;
     order: 1;
     border-radius: 15px;
   }
