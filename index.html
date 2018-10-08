@@ -38,7 +38,7 @@
       </a>
       <a href=content.html>
         <div class=menu-item>
-          <i class="icon fas fa-wrench"></i>
+          <i class="icon fas fa-video"></i>
           <p class=nav-text>
             Content
           </p>
@@ -73,8 +73,58 @@
   </nav>
 
 
-  <main>
+  <main class=height>
 
+    <div class=index-main>
+      <h1 class=index-header><span style="font-size: 0.6em; color: white;">WELCOME<span style="font-family: sans-serif">,</span> WE ARE</span><br /><span style="font-size: 1.17em; color: #ce0814">STALLION</span><br /><span style="  color: #FFDD00;">CREATIONS</span></h1>
+    </div>
+
+    <a style="display: hidden" name=next></a>
+    <div class="index-second">
+      <a href="#next" class=caret><i class="fas fa-caret-down"></i></a>
+      <br />
+      <div class="index-blurb">
+
+        <h2 style="font-family: paloseco"><span style="font-size: 2em; font-weight: 600; line-height: 1.2em;">STALLION HAS GOT YOU COVERED</span><br /><br />Broken headphones? Stallion has got you covered. Need audio equipment installed in your sweet new ride? Stallion has got you covered. Smashed the glass on your brand-new phone? Stallion has got you covered. Our areas of expertise are limitless, so chances are we can accommodate you.</h2>
+      </div>
+    </div>
+
+    <div class="index-third">
+      <h1>About Me</h1>
+      <div class=index-about>
+        <div class=index-left>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class=index-right>
+          <p>
+            DJ McDonald<br />Stallion Creations<br />123-456-7890<br />stallioncreations@gmail.com<br /><br /><a style="text-decoration: underline;   transition: 0.3s;" href=contact.html>Contact me</a>
+          </p>
+          <img src="images/headshot.png" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class=footer>
+        <div class="footer-left">
+
+          <img style="width: 150px;" src="images/logo.png" />
+          <p>
+            Stallion Creations LLC.
+          </p>
+        </div>
+        <p>
+          Made in partner with <a href=https://zealousadvertising.com/>Zealous Advertising</a>
+        </p>
+      </div>
+    </footer>
+
+
+
+    <!--
     <div class=index>
       <h1 class=index-header><span style="font-size: 0.6em; color: white;">WELCOME<span style="font-family: sans-serif">,</span> WE ARE</span><br /><span style="font-size: 1.17em">STALLION</span><br /><span style="  color: #FFDD00;">CREATIONS</span></h1>
     </div>
@@ -82,7 +132,7 @@
     <div class="index-second">
       <div class=index-child>
         <div class="index-left">
-          <h2 style="font-family: paloseco">Broken headphones? Stallion has got you covered. Need audio equipment installed in your sweet new ride? Stallion has got you covered. Smashed the glass on your brand-new phone? Stallion has got you covered. Our areas of expertise are limitless, so chances are we can accommodate you.</h2><br />
+          <h2 style="font-family: paloseco"><span style="font-size: 1.6em; font-weight: 600; line-height: 1.2em;">STALLION HAS GOT YOU COVERED</span><br /><br />Broken headphones? Stallion has got you covered. Need audio equipment installed in your sweet new ride? Stallion has got you covered. Smashed the glass on your brand-new phone? Stallion has got you covered. Our areas of expertise are limitless, so chances are we can accommodate you.</h2><br />
 
         </div>
         <div class="index-right">
@@ -97,7 +147,9 @@
 
     <div class="index-third">
 
-    
+      <div class="index-child1">
+        <h1>tes</h1>
+      </div>
     </div>
   </main>
 
@@ -122,6 +174,43 @@
 
     }, false);
   </script>
+-->
 
-
+    <script type="text/javascript">
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 800, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+    </script>
 </body>
