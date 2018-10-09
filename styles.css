@@ -370,6 +370,12 @@
     color: #FFDD00;
     transition: 0.3s;
   }
+  .contact-button {
+    border-radius: 15px;
+    background: #FFDD00;
+    padding: 1vw;
+    border: 3px solid red;
+  }
   @keyframes bounce {
     from {
       transform: translateY(0px);
