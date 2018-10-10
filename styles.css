@@ -35,10 +35,32 @@
   }
   main {
     margin-left: 80px;
+    height: 100%;
   }
   a {
     text-decoration: none;
     color: black
+  }
+
+  #audio-bar {
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    background: #212121
+  }
+  .audio-bar {
+    background: #212121;
+    width: 80vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .audio-element {
+    width: 80vw;
   }
   nav {
     height: 100%;
@@ -513,7 +535,7 @@
     margin: 5px;
     padding: 5px;
     text-align: center;
-    font-family: "product-sans";
+    font-family: "paloseco";
     animation: slideUp 1s ease;
     color: white;
   }
@@ -533,6 +555,7 @@
     text-align: center;
     width: 100%;
     padding: 50px;
+    background: #212121;
   }
   iframe {
     width: 71.111vw;
@@ -540,6 +563,7 @@
   }
   footer {
     z-index: 9999;
+    width: 100%;
   }
   .footer {
     height: 10vw;
@@ -550,6 +574,8 @@
     font-size: 1.3vw;
     background: #121212;
     color: white;
+    /*margin-bottom: 60px;*/
+    width: 100%;
   }
   .footer-left {
     display: flex;
